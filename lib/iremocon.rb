@@ -4,7 +4,7 @@ require "net/telnet"
 class Iremocon
   attr_reader :host, :port, :telnet
 
-  def initialize(host, port)
+  def initialize(host, port = 51013)
     @host = host
     @port = port
     connect
