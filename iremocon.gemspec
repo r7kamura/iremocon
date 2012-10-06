@@ -4,9 +4,9 @@ require File.expand_path('../lib/iremocon/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Ryo NAKAMURA"]
   gem.email         = ["ryo-nakamura@cookpad.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = "Iremocon is a gem for managing iRemocon through telnet"
+  gem.summary       = "iRemocon manager"
+  gem.homepage      = "https://github.com/r7kamura/iremocon"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
