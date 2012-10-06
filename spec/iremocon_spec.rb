@@ -15,13 +15,13 @@ describe Iremocon do
 
   after do
     server.close
+    client.telnet.close
   end
 
   describe "#new" do
     context "when connection succeeded" do
       it "should connect to tcp server by Net::Telnet client" do
         client.telnet.should be_a(Net::Telnet)
-        client.telnet.close
       end
     end
 
