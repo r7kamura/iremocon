@@ -1,5 +1,4 @@
 require "iremocon/version"
 
-module Iremocon
-  # Your code goes here...
+class Iremocon
 end

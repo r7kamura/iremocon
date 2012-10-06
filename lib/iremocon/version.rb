@@ -1,3 +1,3 @@
-module Iremocon
+class Iremocon
   VERSION = "0.0.1"
 end

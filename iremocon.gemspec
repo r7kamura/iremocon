@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "iremocon"
   gem.require_paths = ["lib"]
   gem.version       = Iremocon::VERSION
+
+  gem.add_development_dependency "rspec"
 end
