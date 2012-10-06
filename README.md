@@ -8,7 +8,7 @@ $ gem install iremocon
 ```
 
 ## Usage
-iRemocon has following commands.
+iRemocon has following commands (for more details, please see [official document](http://i-remocon.com/development/)).
 
 * au 接続確認用
 * is 赤外線発信
