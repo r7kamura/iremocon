@@ -5,8 +5,12 @@ describe Iremocon do
     TCPServer.new("127.0.0.1", 50000)
   end
 
-  let(:client) do
+  let!(:client) do
     Iremocon.new("127.0.0.1", 50000)
+  end
+
+  before do
+    client.stub(:puts) # To silence a command result
   end
 
   after do
