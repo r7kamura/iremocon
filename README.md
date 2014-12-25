@@ -20,6 +20,10 @@ iRemocon has following commands (for more details, please see [official document
 * ts 現在時刻設定
 * tg 現在時刻取得
 * vr ファームバージョン番号の取得
+* li 照度センサー値の取得
+* hu 湿度センサー値の取得 ※IRM-03WLA用
+* te 温度センサー値の取得 ※IRM-03WLA用
+* se 照度・湿度・温度センサー値の取得 ※IRM-03WLA用
 
 You can call it as an instance method of Iremocon class.
 
@@ -66,4 +70,16 @@ iremocon.tg
 
 iremocon.vr
 #=> send "*vr"
+
+iremocon.li
+#=> send "*li"
+
+iremocon.hu
+#=> send "*hu"
+
+iremocon.te
+#=> send "*te"
+
+iremocon.se
+#=> send "*se"
 ```
