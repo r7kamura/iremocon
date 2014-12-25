@@ -50,6 +50,22 @@ class Iremocon
     command("vr")
   end
 
+  def li
+    command("li")
+  end
+
+  def hu
+    command("hu")
+  end
+
+  def te
+    command("te")
+  end
+
+  def se
+    command("se")
+  end
+
   private
 
   def connect

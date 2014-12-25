@@ -118,4 +118,32 @@ describe Iremocon do
       client.vr
     end
   end
+
+  describe "#li" do
+    it "should send *li" do
+      expect(client.telnet).to receive(:cmd).with("*li")
+      client.li
+    end
+  end
+
+  describe "#hu" do
+    it "should send *hu" do
+      expect(client.telnet).to receive(:cmd).with("*hu")
+      client.hu
+    end
+  end
+
+  describe "#te" do
+    it "should send *te" do
+      expect(client.telnet).to receive(:cmd).with("*te")
+      client.te
+    end
+  end
+
+  describe "#se" do
+    it "should send *se" do
+      expect(client.telnet).to receive(:cmd).with("*se")
+      client.se
+    end
+  end
 end
