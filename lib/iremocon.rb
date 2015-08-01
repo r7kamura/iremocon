@@ -76,11 +76,15 @@ class Iremocon
 
   def command(name, *args)
     str = ["*#{name}", *args].compact.join(";")
-    puts catch(:exit) {
-      @telnet.cmd(str) { |res| throw :exit, res }
+    
+    res = ""
+    catch(:exit) {
+        @telnet.cmd(str) { |r| throw :exit, res = r }
     }
   rescue Timeout::Error
     puts "Timeout - 10sec"
+
+    return (res)
   end
 
   class ConnectionError < StandardError; end
